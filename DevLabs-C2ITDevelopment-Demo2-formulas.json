@@ -13,12 +13,11 @@
             "resources": [
                 {
                     "type": "formulas",
-                    "name": "win2012r2v6",
+                    "name": "win2012r2v7",
                     "apiVersion": "2018-10-15-preview",
                     "scale": null,
                     "properties": {
                         "description": "",
-                        "author": "",
                         "osType": "Windows",
                         "formulaContent": {
                             "properties": {
