@@ -17,7 +17,7 @@
                     "apiVersion": "2018-10-15-preview",
                     "scale": null,
                     "properties": {
-                        "description": "",
+                        "description": "Windows Server 2012 R2",
                         "osType": "Windows",
                         "formulaContent": {
                             "properties": {
@@ -77,7 +77,7 @@
                     "apiVersion": "2018-10-15-preview",
                     "scale": null,
                     "properties": {
-                        "description": "",
+                        "description": "64-bit edition of Windows 10",
                         "osType": "Windows",
                         "formulaContent": {
                             "properties": {
@@ -137,7 +137,7 @@
                     "apiVersion": "2018-10-15-preview",
                     "scale": null,
                     "properties": {
-                        "description": "",
+                        "description": "64-bit edition of Windows Server 2008 R2",
                         "osType": "Windows",
                         "formulaContent": {
                             "properties": {
@@ -197,7 +197,7 @@
                     "apiVersion": "2018-10-15-preview",
                     "scale": null,
                     "properties": {
-                        "description": "",
+                        "description": "Windows Server 2016",
                         "osType": "Windows",
                         "formulaContent": {
                             "properties": {
