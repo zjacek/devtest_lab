@@ -22,8 +22,8 @@
                         "formulaContent": {
                             "properties": {
                                 "size": "Standard_DS2",
-                                "userName": "c2adminpass",
-                                "password": "[[[c2adminpass]]",
+                                "userName": "c2admin",
+                                "password": "[[[c2admin]]",
                                 "isAuthenticationWithSshKey": false,
                                 "disallowPublicIpAddress": true,
                                 "artifacts": [
