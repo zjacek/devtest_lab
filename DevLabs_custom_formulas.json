@@ -13,7 +13,7 @@
             "resources": [
                 {
                     "type": "formulas",
-                    "name": "win2012r2",
+                    "name": "win2012r2v8",
                     "apiVersion": "2018-10-15-preview",
                     "scale": null,
                     "properties": {
