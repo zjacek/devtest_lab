@@ -6,4 +6,4 @@ az group create -l westeurope -n DevLab_Development-ExchangeRules
 az group create -l westeurope -n DevLab_Development-ExchangeSync
 az group create -l westeurope -n DevLab_Development-ManualTests
 az group create -l westeurope -n DevLab_Development-Migration
-az group create -l westeurope -n DevLab_Development-Tools
+
