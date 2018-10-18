@@ -22,8 +22,8 @@
                         "formulaContent": {
                             "properties": {
                                 "size": "Standard_F4s",
-                                "userName": "c2adminpass",
-                                "password": "[[[c2adminpass]]",
+                                "userName": "c2admin",
+                                "password": "[[[c2admin]]",
                                 "isAuthenticationWithSshKey": false,
                                 "disallowPublicIpAddress": true,
                                 "artifacts": [
@@ -82,8 +82,8 @@
                         "formulaContent": {
                             "properties": {
                                 "size": "Standard_DS1_v2",
-                                "userName": "c2adminpass",
-                                "password": "[[[c2adminpass]]",
+                                "userName": "c2admin",
+                                "password": "[[[c2admin]]",
                                 "isAuthenticationWithSshKey": false,
                                 "disallowPublicIpAddress": true,
                                 "artifacts": [
@@ -142,8 +142,8 @@
                         "formulaContent": {
                             "properties": {
                                 "size": "Standard_F2s_v2",
-                                "userName": "c2adminpass",
-                                "password": "[[[c2adminpass]]",
+                                "userName": "c2admin",
+                                "password": "[[[c2admin]]",
                                 "isAuthenticationWithSshKey": false,
                                 "disallowPublicIpAddress": true,
                                 "artifacts": [
@@ -202,8 +202,8 @@
                         "formulaContent": {
                             "properties": {
                                 "size": "Standard_F2s_v2",
-                                "userName": "c2adminpass",
-                                "password": "[[[c2adminpass]]",
+                                "userName": "c2admin",
+                                "password": "[[[c2admin]]",
                                 "isAuthenticationWithSshKey": false,
                                 "disallowPublicIpAddress": true,
                                 "artifacts": [
