@@ -1,0 +1,198 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "variables": {},
+    "resources": [
+        {
+            "comments": "DevTest Lab - szablony VM",
+            "apiVersion": "2018-10-15-preview",
+            "type": "Microsoft.DevTestLab/labs",
+            "name": "[trim(resourceGroup().name)]",
+            "location": "[resourceGroup().location]",
+            "resources": [
+                {
+                    "type": "formulas",
+                    "name": "T-W2012R2_(Development-CRM)",
+                    "apiVersion": "2018-10-15-preview",
+                    "scale": null,
+                    "properties": {
+                        "description": "Windows Server 2012 R2",
+                        "osType": "Windows",
+                        "formulaContent": {
+                            "properties": {
+                                "size": "Standard_F4s",
+                                "userName": "c2admin",
+                                "password": "[[[c2admin]]",
+                                "isAuthenticationWithSshKey": false,
+                                "disallowPublicIpAddress": true,
+                                "artifacts": [
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-7zip",
+                                        "parameters": []
+                                    },
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-chrome",
+                                        "parameters": []
+                                    },
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-firefox",
+                                        "parameters": []
+                                    },
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-notepadplusplus",
+                                        "parameters": []
+                                    }
+                                ],
+                                "galleryImageReference": {
+                                    "offer": "WindowsServer",
+                                    "publisher": "MicrosoftWindowsServer",
+                                    "sku": "2012-R2-Datacenter-smalldisk",
+                                    "osType": "Windows",
+                                    "version": "latest"
+                                },
+                                "networkInterface": {
+                                    "sharedPublicIpAddressConfiguration": {
+                                        "inboundNatRules": [
+                                            {
+                                                "transportProtocol": "Tcp",
+                                                "backendPort": 3389
+                                            }
+                                        ]
+                                    }
+                                },
+                                "allowClaim": false,
+                                "storageType": "Standard"
+                            }
+                        },
+                        "provisioningState": "Succeeded"
+                    },
+                    "dependsOn": [
+                        "[resourceId('microsoft.devtestlab/labs', resourceGroup().name)]"
+                    ]
+                },
+                {
+                    "type": "formulas",
+                    "name": "T-W10_(Development-CRM)",
+                    "apiVersion": "2018-10-15-preview",
+                    "scale": null,
+                    "properties": {
+                        "description": "64-bit edition of Windows 10",
+                        "osType": "Windows",
+                        "formulaContent": {
+                            "properties": {
+                                "size": "Standard_DS1_v2",
+                                "userName": "c2admin",
+                                "password": "[[[c2admin]]",
+                                "isAuthenticationWithSshKey": false,
+                                "disallowPublicIpAddress": true,
+                                "artifacts": [
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-7zip",
+                                        "parameters": []
+                                    },
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-chrome",
+                                        "parameters": []
+                                    },
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-firefox",
+                                        "parameters": []
+                                    },
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-notepadplusplus",
+                                        "parameters": []
+                                    }
+                                ],
+                                "galleryImageReference": {
+                                    "offer": "Windows-10",
+                                    "publisher": "MicrosoftWindowsDesktop",
+                                    "sku": "rs4-pro",
+                                    "osType": "Windows",
+                                    "version": "latest"
+                                },
+                                "networkInterface": {
+                                    "sharedPublicIpAddressConfiguration": {
+                                        "inboundNatRules": [
+                                            {
+                                                "transportProtocol": "Tcp",
+                                                "backendPort": 3389
+                                            }
+                                        ]
+                                    }
+                                },
+                                "allowClaim": false,
+                                "storageType": "Standard"
+                            }
+                        },
+                        "provisioningState": "Succeeded"
+                    },
+                    "dependsOn": [
+                        "[resourceId('microsoft.devtestlab/labs', resourceGroup().name)]"
+                    ]
+                },
+                {
+                    "type": "formulas",
+                    "name": "T-W2016_(Development-CRM)",
+                    "apiVersion": "2018-10-15-preview",
+                    "scale": null,
+                    "properties": {
+                        "description": "Windows Server 2016",
+                        "osType": "Windows",
+                        "formulaContent": {
+                            "properties": {
+                                "size": "Standard_F2s_v2",
+                                "userName": "c2admin",
+                                "password": "[[[c2admin]]",
+                                "isAuthenticationWithSshKey": false,
+                                "disallowPublicIpAddress": true,
+                                "artifacts": [
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-7zip",
+                                        "parameters": []
+                                    },
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-chrome",
+                                        "parameters": []
+                                    },
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-firefox",
+                                        "parameters": []
+                                    },
+                                    {
+                                        "artifactId": "/artifactsources/public repo/artifacts/windows-notepadplusplus",
+                                        "parameters": []
+                                    }
+                                ],
+                                "galleryImageReference": {
+                                    "offer": "WindowsServer",
+                                    "publisher": "MicrosoftWindowsServer",
+                                    "sku": "2016-Datacenter-smalldisk",
+                                    "osType": "Windows",
+                                    "version": "latest"
+                                },
+                                "networkInterface": {
+                                    "sharedPublicIpAddressConfiguration": {
+                                        "inboundNatRules": [
+                                            {
+                                                "transportProtocol": "Tcp",
+                                                "backendPort": 3389
+                                            }
+                                        ]
+                                    }
+                                },
+                                "allowClaim": false,
+                                "storageType": "Standard"
+                            }
+                        },
+                        "provisioningState": "Succeeded"
+                    },
+                    "dependsOn": [
+                        "[resourceId('microsoft.devtestlab/labs', resourceGroup().name)]"
+                    ]
+                }
+            ]
+        }
+    ],
+    "outputs": {}
+}
